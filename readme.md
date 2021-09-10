@@ -8,7 +8,15 @@ Installation:
 pip install -e .
 ```
 
-Starting the app:
+Building thr react app
+
+```shell
+npm run build
+```
+
+> Note: This will start a webpack watcher configured in `webpack.config.js`
+
+Starting the Sanic app:
 
 ```shell
 python run.py
@@ -40,7 +48,4 @@ optional arguments:
 __Sanic:__
 - [Sanic Docs](https://sanicframework.org/)
 - [Sanic GitHub](https://github.com/sanic-org/sanic)
-  
-__Jinja2:__
-- [Jinja2 Docs](https://jinja.palletsprojects.com/en/3.0.x/)
-- [Jinja2 GitHub](https://github.com/pallets/jinja)
+

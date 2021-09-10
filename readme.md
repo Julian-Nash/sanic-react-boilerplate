@@ -8,6 +8,12 @@ Installation:
 pip install -e .
 ```
 
+Install NPM dependencies:
+
+```shell
+npm install
+```
+
 Building thr react app
 
 ```shell

@@ -1,6 +1,6 @@
 # Sanic React boilerplate
 
-Sanic web app boilerplate. React, React Router, Webpack & Babel
+Sanic, React & React Router, built with Webpack & Babel
 
 Installation:
 
@@ -8,7 +8,7 @@ Installation:
 pip install -e .
 ```
 
-Install NPM dependencies:
+Install JS dependencies:
 
 ```shell
 npm install
@@ -20,9 +20,9 @@ Building thr react app
 npm run build
 ```
 
-> Note: This will start a webpack watcher configured in `webpack.config.js`
+> Note: This will start a watcher configured in `webpack.config.js`
 
-Starting the Sanic app:
+Starting the Sanic web app:
 
 ```shell
 python run.py
@@ -30,7 +30,7 @@ python run.py
 
 The application will start on http://localhost:8000
 
-Options for starting the app:
+Sanic app options:
 
 ```shell
 $ python run.py --help

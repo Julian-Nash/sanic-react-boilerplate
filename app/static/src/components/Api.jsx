@@ -25,18 +25,31 @@ function Api() {
   }, [])
 
   if (error) {
-    return <div>Error: {error.message}</div>;
+    return (
+      <div>
+        <h3>REST API data</h3>
+        <span>Error: {error.message}</span>
+      </div>
+    )
   } else if (!isLoaded) {
-    return <div>Loading...</div>;
+    return (
+      <div>
+        <h3>REST API data</h3>
+        <span>Loading...</span>;
+      </div>
+    )
   } else {
     return (
-      <ul>
-        {items.map(item => (
-          <li key={item.id}>
-            {item.name} {item.price}
-          </li>
-        ))}
-      </ul>
+      <div>
+        <h3>REST API data</h3>
+        <ul>
+          {items.map(item => (
+            <li key={item.id}>
+              {item.name} {item.price}
+            </li>
+          ))}
+        </ul>
+      </div>
     );
   }
 }

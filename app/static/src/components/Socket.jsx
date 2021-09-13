@@ -5,7 +5,7 @@ class Socket extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = {time: null};
+    this.state = {data: null};
   }
 
   componentDidMount() {
@@ -18,7 +18,7 @@ class Socket extends React.Component {
 
     this.socket.addEventListener('message', (event) => {
       this.setState({
-        time: event.data
+        data: event.data
       })
     });
 
@@ -32,7 +32,7 @@ class Socket extends React.Component {
     return (
       <div>
         <h3>Websocket data</h3>
-        <span>Socket data: {this.state.time || "..."}</span>
+        <span>{this.state.data || "Loading..."}</span>
       </div>
     )
   }

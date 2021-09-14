@@ -14,7 +14,7 @@ Install JS dependencies:
 npm install
 ```
 
-Building thr react app
+Building the react app
 
 ```shell
 npm run build
